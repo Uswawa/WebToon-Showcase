@@ -38,8 +38,11 @@ function animateElement(element) {
     const animationType = element.getAttribute('data-animation') || 'fade-in-up';
     const animationDelay = element.getAttribute('data-delay') || '0s';
 
+    // Convert kebab-case to camelCase (e.g., 'fade-in-left' -> 'fadeInLeft')
+    const camelCaseAnimation = animationType.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+
     // Set animation styles
-    element.style.animation = `${animationType} 0.6s ease-out forwards`;
+    element.style.animation = `${camelCaseAnimation} 0.6s ease-out forwards`;
     element.style.animationDelay = animationDelay;
     element.style.opacity = '1';
 }
