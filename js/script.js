@@ -1,7 +1,6 @@
 // ===== Intersection Observer for Scroll Animations =====
 document.addEventListener('DOMContentLoaded', function () {
     initializeScrollAnimations();
-    initializeFormHandler();
     initializeNavigation();
 });
 
@@ -57,57 +56,6 @@ function resetAnimation(element) {
 }
 
 /**
- * Handle contact form submission
- */
-function initializeFormHandler() {
-    const form = document.querySelector('.contact-form');
-    
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            
-            // Show success message
-            showNotification('Message sent successfully! We will get back to you soon.', 'success');
-            
-            // Reset form
-            form.reset();
-        });
-    }
-}
-
-/**
- * Show notification message
- */
-function showNotification(message, type = 'success') {
-    const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    notification.textContent = message;
-    
-    // Add notification styles
-    notification.style.position = 'fixed';
-    notification.style.bottom = '20px';
-    notification.style.right = '20px';
-    notification.style.padding = '16px 24px';
-    notification.style.background = type === 'success' ? '#10b981' : '#ef4444';
-    notification.style.color = 'white';
-    notification.style.borderRadius = '8px';
-    notification.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
-    notification.style.zIndex = '2000';
-    notification.style.animation = 'slideInRight 0.3s ease-out';
-    
-    document.body.appendChild(notification);
-    
-    // Remove notification after 3 seconds
-    setTimeout(() => {
-        notification.style.animation = 'fadeOut 0.3s ease-out forwards';
-        setTimeout(() => notification.remove(), 300);
-    }, 3000);
-}
-
-/**
  * Smooth scroll navigation
  */
 function initializeNavigation() {
@@ -117,7 +65,6 @@ function initializeNavigation() {
         link.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             
-            // Only prevent default for anchor links
             if (href.startsWith('#')) {
                 e.preventDefault();
                 const targetId = href.substring(1);
