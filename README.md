@@ -1,80 +1,80 @@
-# Web Enhanced - Scroll-Triggered Animations
+# WebToon Showcase - Korean Web Novel Series
 
-A modern, responsive website showcasing smooth scroll-triggered animations built with **HTML5**, **CSS3**, and the **Intersection Observer API**.
+A beautiful, interactive showcase of popular Korean web novels (WebToons) built with **HTML5**, **CSS3**, and **Intersection Observer API**. Features smooth scroll animations and responsive design with vibrant gradients.
 
-## 🚀 Features
+## 🎬 Features
 
-- ✨ **Scroll-Triggered Animations** - Elements animate as they come into view
-- 📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile
-- ⚡ **Performance Optimized** - Native Intersection Observer API, lightweight
-- 🎨 **Modern Design** - Beautiful gradients, smooth transitions, and interactive elements
-- 🔧 **Easy to Customize** - Simple CSS variables for quick theme changes
-- 🌐 **HTML5 & CSS3** - Semantic markup and advanced CSS animations
-- ♿ **Accessible** - Semantic HTML and keyboard-friendly navigation
+- ✨ **Scroll-Triggered Animations** - Smooth animations as you explore content
+- 📱 **Fully Responsive** - Optimized for desktop, tablet, and mobile devices
+- ⚡ **High Performance** - Uses native Intersection Observer API
+- 🎨 **Vibrant Design** - Modern gradients and color schemes
+- 🖼️ **WebToon Showcase** - Featured Korean web novels with cover images
+- 🏷️ **Category System** - Organized by genre (Action, Murim, Isekai, Romance, etc.)
+- ♿ **Accessible** - Semantic HTML with keyboard navigation
 
 ## 📁 Project Structure
 
 ```
 Prefinal/
 ├── html/
-│   └── index.html  # Main HTML5 file with semantic structure
+│   └── index.html          # Main HTML file
 ├── css/
-│   └── styles.css  # CSS3 with responsive design and animations
+│   └── styles.css          # Styling and animations
 ├── js/
-│   └── script.js   # Intersection Observer for scroll animations
+│   └── script.js           # Intersection Observer implementation
+├── img/
+│   ├── LogoPic.png         # WebToon logo
+│   ├── tged.jpg            # TGED cover
+│   ├── solo_leveling.jpg   # Solo Leveling cover
+│   ├── omniscient_reader.jpg # Omniscient Reader cover
+│   ├── tbate.jpg           # TBATE cover
+│   └── pickmeup_infinitegacha.jpg # Pick Me Up cover
 ├── README.md
 └── .gitignore
 ```
 
-## 🎯 Technologies Used
+## 🎯 Featured WebToons
+
+1. **The Beginning After The End (TGED)** - Epic fantasy with rebirth theme
+2. **Solo Leveling** - Action-packed hunter progression story
+3. **Omniscient Reader's Viewpoint** - Web novel world transcendence
+4. **TBATE** - Multi-world fantasy adventure
+5. **Pick Me Up** - Comedy-romance series
+
+## 🏷️ Categories
+
+- **Action / System** - Power-up and dungeon-based stories
+- **Murim (Martial Arts)** - Traditional martial arts narratives
+- **Regression / Reincarnation** - Time-travel and rebirth themes
+- **Otome Isekai** - Female-lead fantasy worlds
+- **School Life / Delinquent** - Modern school and street life
+- **Romance / Comedy** - Relationship and humor focused
+
+## 🛠️ Technologies Used
 
 - **HTML5** - Semantic markup and structure
-- **CSS3** - Advanced animations, gradients, and responsive design
+- **CSS3** - Advanced gradients, animations, and responsive design
 - **Intersection Observer API** - Efficient scroll-triggered animations
-- **No External Dependencies** - Pure vanilla implementation
+- **Vanilla JavaScript** - No external dependencies
 
-## 🎬 Animation Types
+## 📱 Responsive Design
 
-The project includes various scroll-triggered animations:
+- **Desktop** - Full layout with side-by-side content
+- **Tablet** (≤ 768px) - Adjusted layouts
+- **Mobile** (≤ 480px) - Mobile-optimized views
 
-1. **Fade In Up** - Elements fade in while sliding up
-2. **Fade In Left/Right** - Directional fade-in animations
-3. **Slide In** - Smooth sliding transitions from various directions
-4. **Zoom In** - Scale and zoom effects
-5. **Count Up** - Number animations for statistics
-6. **Parallax Effects** - Depth perception through offset scrolling
-
-## 📱 Responsive Breakpoints
-
-- **Desktop** - Full layout and all features
-- **Tablet** (≤ 768px) - Adjusted grid layouts and font sizes
-- **Mobile** (≤ 480px) - Optimized for small screens
-
-## 🛠️ How to Use
+## 🚀 How to Use
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/web-enhanced.git
-cd web-enhanced
+git clone https://github.com/yourusername/webtoon-showcase.git
+cd Prefinal
 ```
 
 ### 2. Open in Browser
 
-Simply open `index.html` in your web browser:
-
-```bash
-# On Windows
-start index.html
-
-# On macOS
-open index.html
-
-# On Linux
-xdg-open index.html
-```
-
-Or use a local server for better performance:
+Open `html/index.html` directly or use a local server:
 
 ```bash
 # Python 3
@@ -84,17 +84,17 @@ python -m http.server 8000
 npx http-server
 ```
 
-Then navigate to `http://localhost:8000`
+Navigate to `http://localhost:8000`
 
 ### 3. Customize
 
-Edit the CSS variables in `styles.css` to change colors:
+Edit CSS variables in `styles.css`:
 
 ```css
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #ec4899;
-    --text-dark: #1f2937;
+    --primary-color: #7c3aed;
+    --secondary-color: #ff006e;
+    --tertiary-color: #00d9ff;
     /* ... more variables ... */
 }
 ```

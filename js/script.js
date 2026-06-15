@@ -39,16 +39,10 @@ function animateElement(element) {
     const animationType = element.getAttribute('data-animation') || 'fade-in-up';
     const animationDelay = element.getAttribute('data-delay') || '0s';
 
-    // Convert hyphenated animation names to camelCase for CSS keyframes
-    const camelCaseAnimation = animationType.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-
     // Set animation styles
-    element.style.animation = `${camelCaseAnimation} 0.6s ease-out forwards`;
+    element.style.animation = `${animationType} 0.6s ease-out forwards`;
     element.style.animationDelay = animationDelay;
     element.style.opacity = '1';
-
-    // Add animation class
-    element.classList.add(camelCaseAnimation);
 }
 
 /**
@@ -57,7 +51,6 @@ function animateElement(element) {
 function resetAnimation(element) {
     element.style.animation = 'none';
     element.style.opacity = '0';
-    element.classList.remove('fadeInUp', 'fadeInRight', 'fadeInLeft', 'slideInLeft', 'slideInRight', 'slideInUp', 'zoomIn', 'rotate');
     
     // Trigger reflow to restart animation on next trigger
     void element.offsetWidth;
@@ -94,18 +87,16 @@ function showNotification(message, type = 'success') {
     notification.textContent = message;
     
     // Add notification styles
-    notification.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 16px 24px;
-        background: ${type === 'success' ? '#10b981' : '#ef4444'};
-        color: white;
-        border-radius: 8px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        z-index: 2000;
-        animation: slideInRight 0.3s ease-out;
-    `;
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.padding = '16px 24px';
+    notification.style.background = type === 'success' ? '#10b981' : '#ef4444';
+    notification.style.color = 'white';
+    notification.style.borderRadius = '8px';
+    notification.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
+    notification.style.zIndex = '2000';
+    notification.style.animation = 'slideInRight 0.3s ease-out';
     
     document.body.appendChild(notification);
     
@@ -140,6 +131,3 @@ function initializeNavigation() {
     });
 }
 
-// ===== Console message for developers =====
-console.log('%c✨ Web Enhanced - Scroll Animations Loaded!', 'color: #6366f1; font-size: 16px; font-weight: bold;');
-console.log('%cScroll the page to see animations in action!', 'color: #6b7280; font-size: 12px;');

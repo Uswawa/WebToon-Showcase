@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Enhanced - Scroll Animations</title>
+    <title>WebToon Showcase - Korean Web Novel Series</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Web Enhanced</div>
+            <div class="logo-container">
+                <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 12h12M10 16h12M10 20h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">WebToon</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#features">Categories</a></li>
                 <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -24,14 +29,14 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title fade-in-up">Stunning Scroll Animations</h1>
+                <h1 class="hero-title fade-in-up">WebToon Showcase</h1>
                 <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s">
-                    Experience the magic of scroll-triggered animations with modern web technologies
+                    Explore the most captivating Korean web novels and their incredible stories of fantasy, action, and adventure
                 </p>
-                <button class="cta-button fade-in-up" style="animation-delay: 0.4s">Get Started</button>
+                <button class="cta-button fade-in-up" style="animation-delay: 0.4s">Explore Categories</button>
             </div>
             <div class="hero-image fade-in-right">
-                <div class="gradient-box"></div>
+                <img class="hero-image-img" src="../img/LogoPic.png" alt="WebToon Logo">
             </div>
         </div>
     </section>
@@ -39,80 +44,83 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title scroll-animate">Key Features</h2>
+            <h2 class="section-title scroll-animate">Top Categories</h2>
             
             <div class="features-grid">
                 <!-- Feature 1 -->
                 <div class="feature-card scroll-animate" data-animation="slide-left">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <circle cx="25" cy="25" r="22" stroke="currentColor" stroke-width="2"/>
-                            <path d="M25 15v20M15 25h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 25l8-8 8 8-8 8-8-8zm0 0h32M8 12v26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="25" y="30" font-size="12" font-weight="bold" fill="currentColor" text-anchor="middle">LV</text>
                         </svg>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Works seamlessly on all devices - desktop, tablet, and mobile screens.</p>
+                    <h3>Action / System</h3>
+                    <p>Centers on overpowered main characters who gain video-game-like abilities, level up, and conquer portals or dungeons.</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="feature-card scroll-animate" data-animation="slide-up">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <rect x="8" y="8" width="34" height="34" stroke="currentColor" stroke-width="2"/>
-                            <path d="M22 28L28 22M28 28L22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M25 8l8 8-4 4 8 8-4 4 8 8-22-22 6-10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                            <line x1="15" y1="35" x2="35" y2="15" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3>Smooth Animations</h3>
-                    <p>CSS3 and Intersection Observer API for buttery-smooth scroll animations.</p>
+                    <h3>Murim (Martial Arts)</h3>
+                    <p>Rooted in traditional Korean and Chinese martial arts, featuring Jianghu, sect politics, and legendary weaponry.</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="feature-card scroll-animate" data-animation="slide-right">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <circle cx="25" cy="25" r="22" stroke="currentColor" stroke-width="2"/>
-                            <path d="M18 28l5-6 7 8 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="25" cy="25" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 8l4 4M25 42l-4-4M8 25l4-4M42 25l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 18l14 14M32 18l-14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Performance Optimized</h3>
-                    <p>Lightweight and fast-loading with optimized animations for great performance.</p>
+                    <h3>Regression / Reincarnation</h3>
+                    <p>Characters get a second chance at life, traveling back in time or reincarnating into their past selves or a fantasy world to change their fate.</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div class="feature-card scroll-animate" data-animation="zoom-in">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M8 12h34v26H8z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M8 12l17 15 17-15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M10 10h30v30H10z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="25" cy="22" r="5" fill="currentColor"/>
+                            <path d="M15 32l5-8 5 4 8-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Easy Integration</h3>
-                    <p>Simple to integrate into any project with minimal dependencies.</p>
+                    <h3>Otome Isekai</h3>
+                    <p>Typically features female leads who are transported into the world of a novel or video game, often as a villainess, royalty, or supporting character.</p>
                 </div>
 
                 <!-- Feature 5 -->
                 <div class="feature-card scroll-animate" data-animation="slide-left">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <circle cx="25" cy="25" r="22" stroke="currentColor" stroke-width="2"/>
-                            <path d="M25 15v10M25 30v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M15 25h10M30 25h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 20h30v20H10z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 10l8 10H17z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <line x1="18" y1="28" x2="18" y2="35" stroke="currentColor" stroke-width="2"/>
+                            <line x1="25" y1="28" x2="25" y2="35" stroke="currentColor" stroke-width="2"/>
+                            <line x1="32" y1="28" x2="32" y2="35" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3>Modern Tech Stack</h3>
-                    <p>Built with HTML5, CSS3, and vanilla JavaScript - no heavy frameworks.</p>
+                    <h3>School Life / Delinquent</h3>
+                    <p>Set in modern South Korea, these stories follow high schoolers navigating gang conflicts, bullying, and street fighting.</p>
                 </div>
 
                 <!-- Feature 6 -->
                 <div class="feature-card scroll-animate" data-animation="slide-right">
                     <div class="feature-icon">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M12 38h26V12H12v26z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 18h26M18 12v26M32 12v26" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 40C32 32 40 28 40 20C40 14 35 10 30 10C27 10 24 12 25 12C26 12 23 10 20 10C15 10 10 14 10 20C10 28 18 32 25 40Z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.3"/>
                         </svg>
                     </div>
-                    <h3>Customizable</h3>
-                    <p>Easily customize colors, animations, and timing to match your brand.</p>
+                    <h3>Romance / Comedy</h3>
+                    <p>Focuses on relationship building, workplace romance, or historical courtships, frequently utilizing witty dialogue.</p>
                 </div>
             </div>
         </div>
@@ -121,43 +129,52 @@
     <!-- Showcase Section -->
     <section id="showcase" class="showcase">
         <div class="container">
-            <h2 class="section-title scroll-animate">Animation Showcase</h2>
+            <h2 class="section-title scroll-animate">Featured Web Novels</h2>
             
             <div class="showcase-grid">
                 <!-- Showcase Item 1 -->
                 <div class="showcase-item scroll-animate" data-animation="fade-in-left">
                     <div class="showcase-content">
-                        <h3>Fade In Animations</h3>
-                        <p>Elements fade in smoothly as they come into view. Perfect for introductions and content reveals.</p>
+                        <h3>The Greatest Estate Developer</h3>
+                        <p>Suho Kim, a civil engineering student, transmigrates into the body of Lloyd Frontera—a lazy, indebted, and reviled nobleman from a fantasy novel. Armed with modern engineering knowledge and a giant hamster contract, Suho uses civil engineering and magic to save his family from ruin, building prosperous cities. </p>
                     </div>
-                    <div class="showcase-visual fade-visual"></div>
+                    <img class="showcase-image" src="../img/tged.jpg" alt="TGED Web Novel Cover">
                 </div>
 
                 <!-- Showcase Item 2 -->
                 <div class="showcase-item scroll-animate" data-animation="zoom-in">
-                    <div class="showcase-visual scale-visual"></div>
+                    <img class="showcase-image" src="../img/solo_leveling.jpg" alt="Solo Leveling Web Novel Cover">
                     <div class="showcase-content">
-                        <h3>Scale & Zoom Effects</h3>
-                        <p>Create dynamic scale effects that grab attention and highlight important elements.</p>
+                        <h3>Solo Leveling</h3>
+                        <p>Solo Leveling is a dark fantasy action series where "Hunters" battle monsters emerging from dimensional portals. It follows Sung Jin-woo, humanity’s weakest hunter, who gains the impossible ability to level up. He transforms into an unstoppable "Shadow Monarch," using necromancy to build an army of the dead.</p>
                     </div>
                 </div>
 
                 <!-- Showcase Item 3 -->
                 <div class="showcase-item scroll-animate" data-animation="slide-in-left">
                     <div class="showcase-content">
-                        <h3>Slide Transitions</h3>
-                        <p>Smooth sliding animations from various directions enhance the user experience.</p>
+                        <h3>Omniscient Reader's Viewpoint</h3>
+                        <p>Omniscient Reader's Viewpoint (ORV) follows Kim Dokja, an average office worker and the sole reader of a niche web novel. When reality suddenly transforms into the apocalyptic setting of the story he has followed for a decade, he must use his unique foreknowledge to survive and alter the plot.</p>
                     </div>
-                    <div class="showcase-visual slide-visual"></div>
+                    <img class="showcase-image" src="../img/omniscient_reader.jpg" alt="Omniscient Reader's Viewpoint Cover">
                 </div>
 
                 <!-- Showcase Item 4 -->
                 <div class="showcase-item scroll-animate" data-animation="rotate">
-                    <div class="showcase-visual rotate-visual"></div>
+                    <img class="showcase-image" src="../img/tbate.jpg" alt="TBATE Web Novel Cover">
                     <div class="showcase-content">
-                        <h3>Rotation Effects</h3>
-                        <p>Add rotation and transform effects for a modern, interactive feel.</p>
+                        <h3>The Beginning After The End</h3>
+                        <p>The Beginning After the End is a popular, epic fantasy series that follows King Grey, a cold, powerful, but unfulfilled ruler in a martial-arts-driven world. After dying mysteriously, he is reincarnated into a vibrant, magical new world as a baby named Arthur Leywin. Retaining his past wisdom and combat instincts, he sets out to correct his past mistakes and protect his new loved ones.</p>
                     </div>
+                </div>
+
+                <!-- Showcase Item 5 -->
+                <div class="showcase-item scroll-animate" data-animation="pulse">
+                    <div class="showcase-content">
+                        <h3>Pick Me Up, Infinite Gacha</h3>
+                        <p>Pick Me Up: Infinite Gacha follows a top-ranked Earth gamer who is mysteriously sucked into a notoriously difficult mobile gacha game. Transported into the body of a weak 1-star rookie, he must orchestrate survival, lead a ragtag party up a 100-floor tower, and defeat the higher-dimensional player acting as his "Master".</p>
+                    </div>
+                    <img class="showcase-image" src="../img/pickmeup_infinitegacha.jpg" alt="Pick Me Up Web Novel Cover">
                 </div>
             </div>
         </div>
@@ -167,62 +184,16 @@
     <section class="parallax">
         <div class="container">
             <div class="parallax-content scroll-animate" data-animation="fade-in-up">
-                <h2>Experience the Difference</h2>
-                <p>Scroll animations make websites feel alive and engaging</p>
+                <h2>Immersive Story Experience</h2>
+                <p>Discover worlds of fantasy, action, and adventure through captivating web novels</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <h2 class="section-title scroll-animate">By The Numbers</h2>
-            
-            <div class="stats-grid">
-                <div class="stat-card scroll-animate" data-animation="count-up">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Responsive</div>
-                </div>
-                <div class="stat-card scroll-animate" data-animation="count-up">
-                    <div class="stat-number">60+</div>
-                    <div class="stat-label">Animations</div>
-                </div>
-                <div class="stat-card scroll-animate" data-animation="count-up">
-                    <div class="stat-number">Zero</div>
-                    <div class="stat-label">Dependencies</div>
-                </div>
-                <div class="stat-card scroll-animate" data-animation="count-up">
-                    <div class="stat-number">99%</div>
-                    <div class="stat-label">Performance</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title scroll-animate">Get In Touch</h2>
-            
-            <form class="contact-form scroll-animate">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Web Enhanced. Built with HTML5, CSS3, and Intersection Observer.</p>
+            <p>&copy; 2026 WebToon Showcase | Made By: Taborada's Group</p>
         </div>
     </footer>
 
