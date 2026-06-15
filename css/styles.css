@@ -320,7 +320,7 @@ body {
 .showcase-image {
     width: 100%;
     height: 450px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: var(--shadow);
 }
@@ -660,6 +660,10 @@ body {
 
     .showcase-item:nth-child(even) {
         direction: ltr;
+    }
+
+    .showcase-image {
+        height: 300px;
     }
 
     .showcase-visual {
