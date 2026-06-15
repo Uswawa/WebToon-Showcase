@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /**
- * Initialize Scroll Animations using Intersection Observer API
+ * Initialize Scroll Animations
  */
 function initializeScrollAnimations() {
     const observerOptions = {
