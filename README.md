@@ -43,12 +43,12 @@ Prefinal/
 
 ## 🏷️ Categories
 
-- **Action / System** - Power-up and dungeon-based stories
-- **Murim (Martial Arts)** - Traditional martial arts narratives
-- **Regression / Reincarnation** - Time-travel and rebirth themes
-- **Otome Isekai** - Female-lead fantasy worlds
-- **School Life / Delinquent** - Modern school and street life
-- **Romance / Comedy** - Relationship and humor focused
+- **Action / System** - Power-up and dungeon-based stories.
+- **Murim (Martial Arts)** - Traditional martial arts narratives.
+- **Regression / Reincarnation** - Time-travel and rebirth themes.
+- **Otome Isekai** - Female-lead fantasy worlds.
+- **School Life / Delinquent** - Modern school and street life.
+- **Romance / Comedy** - Relationship and humor focused.
 
 ## 🛠️ Technologies Used
 
