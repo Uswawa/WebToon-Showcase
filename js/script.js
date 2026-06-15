@@ -1,4 +1,4 @@
-// ===== Intersection Observer for Scroll Animations =====
+// ===== Scroll Animations =====
 document.addEventListener('DOMContentLoaded', function () {
     initializeScrollAnimations();
     initializeNavigation();
